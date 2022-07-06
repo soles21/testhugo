@@ -1,0 +1,87 @@
+<!-- Mark up for Site Navigation Section-->
+<header class="header">
+  <nav class="main-nav navbar navbar-expand-lg {{ if not $.IsHome }}main-nav-colored{{ end }}">
+    <div class="container-fluid">
+      <a href="{{.Site.BaseURL}}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL}}" alt="site-logo" />
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse nav-list"
+        id="mainNav"
+      >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Diensten</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}automate/">Automate</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}acronis/">Acronis Cloud Backup</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}office365/">Microsoft Office 365</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}dox/">Xcellerate DOX</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}business-wifi/">Business Wi-Fi</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}webroot/">Webroot Endpoint Protection</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Wie zijn we?</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}mission/">Misie & Visie</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}team/">Team</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}onze-patner/">Patners</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}vacatures/">Vacatures</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Productivity Shop</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}cloud/"><i class="fa fa-cloud" aria-hidden="true"></i> Cloud</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}productiviteit/"><i class="fa fa-plus-circle" aria-hidden="true"></i> Productiviteit</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}networking-security/">Networking / Security</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}winkelwagen/">Winkelwagen</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Tools</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#"><i class="fa fa-skype" aria-hidden="true"></i> Skype Meeting</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-television" aria-hidden="true"></i> Hulp Op Afstand</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-life-ring" aria-hidden="true"></i> Helpdesk</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Mobiele Toestellen</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i> Cloud Backup / DR</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Contact</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}contact/"><i class="fa fa-phone" aria-hidden="true"></i> Contactgegevens</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}gdpr/">GDPR / Cookies</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Mijn account</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}mijn-account/">Mijn Account</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}winkelwagen/">Winkelwagen</a>
+                <a class="dropdown-item" href="{{ $.Site.BaseURL }}lost-password/">Wachtwoord Vergeten?</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+      </li>
+
+    </ul>
+      </div>
+    </div>
+  </nav>
+</header>
